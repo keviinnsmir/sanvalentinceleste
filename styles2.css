@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.fondo {
+    background: linear-gradient(to right, #f8e8e8, #f0c5c5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta {
+    background-color: #fff;
+    border: 1px solid #e2b2c1;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    max-width: 600px; /* Ancho máximo de la carta */
+    max-height: 600px; /* Altura máxima de la carta */
+    overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.carta:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    color: #e67e22;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+    color: #333;
+}
+
+.imagen {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+.mensaje {
+    margin-top: 20px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+audio {
+    margin-top: 15px;
+    width: 100%;
+    outline: none;
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 2.5em;
+    animation: fadeIn 2s;
+}
+
+.mensaje, .pregunta {
+    font-size: 1.5em;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.boton {
+    background-color: #ff8adc;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #fa75a1;
+}
+
+.galeria {
+    margin-top: 30px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+.carta {
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    resize: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
